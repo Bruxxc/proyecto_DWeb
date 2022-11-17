@@ -1,0 +1,11 @@
+button {
+    font-family: Anton;
+    background-color: #5e1eb1;
+    box-shadow: 3px 3px 15px rgb(106, 12, 153);
+    border-color: #5e1eb1;
+    border-radius: 8px;
+    &:hover{
+        /*BOTÓN HOVER*/
+        filter: brightness(150%);
+    }
+}

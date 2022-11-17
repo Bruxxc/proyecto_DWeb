@@ -1,0 +1,8 @@
+@mixin tag ($color,$ancho,$fondo){
+    width: 100%;
+    border:double $color $ancho;
+    border-left:none;
+    border-right: none;
+    background:$fondo;
+}
+

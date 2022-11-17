@@ -1,0 +1,143 @@
+@media (max-width:1200px) {
+    .section_contactos ul li {
+        width: 300px;
+    }
+
+    .contacto_article form fieldset {
+        width: 400px;
+    }
+
+    .form_element {
+        width: 350px;
+    }
+
+    .contacto_section_imagen img {
+        width: 170px;
+        height: 170px;
+    }
+
+}
+
+/*PANTALLA MEDIANA 1*/
+
+@media (max-width:992px) {
+    .section_contactos ul li {
+        width: 270px;
+    }
+
+    .contacto_article form fieldset {
+        width: 330px;
+    }
+
+    .form_element {
+        width: 300px;
+    }
+
+    .contacto_section_imagen img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+/*PANTALLA MEDIANA 2*/
+
+@media (max-width:892px) {
+    .contacto_section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas:
+            "logo"
+            "form"
+            "contactos";
+    }
+
+    .contacto_section_info {
+        margin-right: 0;
+    }
+
+    .contacto_article form fieldset {
+        width: 560px;
+    }
+
+    .form_element {
+        width: 530px;
+    }
+}
+
+/*PANTALLA MEDIANA 3*/
+
+@media (max-width:800px) {}
+
+/*PANTALLA MEDIANA 4 (TABLET HORIZONTAL)*/
+
+@media (max-width:768px) {
+   
+
+}
+
+/*PANTALLA MEDIANA 5*/
+
+@media (max-width:660px) {
+    .contacto_article form fieldset {
+        width: 490px;
+    }
+
+    .form_element {
+        width: 460px;
+    }
+    .contacto_article {
+        margin-left: 0;
+    }
+
+}
+
+/*MOBILE 1*/
+
+@media (max-width:576px) {
+
+    .contacto_article form fieldset {
+        width: 385px;
+    }
+
+    .form_element {
+        width: 370px;
+    }
+
+    .fade-in-left {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    .fade-in-right {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+
+}
+
+/*MOBILE 2*/
+
+@media (max-width:485px) {
+
+    .contacto_article form fieldset {
+        width: 300px;
+    }
+
+    .form_element {
+        width: 280px;
+    }
+
+}
+
+@media (max-width:392px) {
+
+    .contacto_article form fieldset {
+        width: 200px;
+    }
+
+    .form_element {
+        width: 180px;
+    }
+
+}

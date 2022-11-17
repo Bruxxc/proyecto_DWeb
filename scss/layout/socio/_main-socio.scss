@@ -1,0 +1,123 @@
+/*COMIENZO MAIN SOCIO*/
+
+.socio_main {
+    margin-top: 100px;
+}
+
+.socio_section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "mem reg";
+}
+
+.socio_article {
+    grid-area: mem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas:
+        "title title title"
+        "f1 f2 f3";
+    justify-items: center;
+}
+
+/*TITULO*/
+.socio_article h1 {
+    text-align: center;
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+    margin-bottom: 10px;
+    grid-area: title;
+    color:$subtitle;
+}
+
+.socio_article_lista_planes {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+/*CONTAINER PLANES*/
+.container_carta {
+    height: 400px;
+    background-color: #0c0b0c;
+    border: solid black;
+    width: 240px;
+    box-shadow: 3px 3px 10px $caja_neon_color;
+    display: grid;
+    grid-template-rows: 1fr 5fr 2fr;
+    justify-items: center;
+}
+.glowing{
+    width: 260px;
+    height: 420px;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
+    
+}
+.f1 {
+    grid-area: f1;
+    background-image: url(../assets/img/logo_violeta.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.f2 {
+    grid-area: f2;
+    background-image: url(../assets/img/akuma_fondo4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 220px;
+}
+
+.f3 {
+    grid-area: f3;
+    background-image: url(../assets/img/akuma_fondo6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 230px;
+}
+
+/*CONTAINER TITLE*/
+.socio_article_lista_title {
+    text-align: center;
+    color: $title;
+}
+
+.socio_article_compra {
+    margin-top: 280px;
+    display: grid;
+    width: 100%;
+    h3{
+        text-align: center;
+    }
+}
+
+.precio_rojo {
+    text-decoration: line-through rgb(177, 27, 27) 3px;
+    color: rgb(185, 95, 95);
+}
+
+.precio_verde {
+    color: rgb(65, 172, 65);
+}
+
+/*REGLAMENTO*/
+.socio_section_reglamento {
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+    width: 400px;
+    margin-top: 45px;
+    grid-area: reg;
+    ul{
+        display: grid;
+        justify-items: center;
+
+        li{
+            margin-bottom: 10px;
+            list-style-type: none;
+        }
+    }
+}
+
+/*FIN MAIN SOCIO*/

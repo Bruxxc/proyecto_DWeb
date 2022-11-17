@@ -1,0 +1,39 @@
+/*BASE*/
+@import "./base/reset" ;
+@import "./base/typo" ;
+@import "./base/body";
+
+/*VARIABLES*/
+@import "./utilities/variables";
+
+/*MIXINS*/
+@import "./utilities/mixins";
+
+/*LAYOUT*/
+@import "./layout/header" ;
+@import "./layout/footer" ;
+@import "./layout/index/main-index" ;
+@import "./layout/tienda/main-tienda" ;
+@import "./layout/actividades/main-actividades";
+@import "./layout/contacto/main-contacto";
+@import "./layout/socio/main-socio";
+
+
+/*ANIMACIONES*/
+@import "./layout/index/animations-index" ;
+@import "./layout/tienda/animations-tienda";
+@import "./layout/socio/animations-socio";
+
+/*COMPONENTES*/
+@import "./components/buttons";
+
+/*MEDIAS*/
+
+@import "./layout/medias/header-media" ;
+@import "./layout/medias/footer-media" ;
+@import "./layout/index/media-index" ;
+@import "./layout/tienda/media-tienda" ;
+@import "./layout/actividades/media-actividades";
+@import "./layout/contacto/media-contacto";
+@import "./layout/socio/media-socio";
+

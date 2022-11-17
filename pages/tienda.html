@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Condenanza">
+    <meta name="copyright" content="akumagym">
+    <meta name="description" content="¡Mira todos nuestras increibles ofertas y productos!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/img/logo_violeta.png">
+    <title>AKUMA GYM | Tienda</title>
+    <!--OPENGRAPH-->
+    <meta property="og:title" content="AKUMA GYM">
+    <meta property="og:site_name" content="TIENDA">
+    <meta property="og:url" content="www.akumagym.com.uy">
+    <meta property="og:description" content="La comunidad de fitness mas grande de Uruguay.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://c4.wallpaperflare.com/wallpaper/871/224/921/video-games-street-fighter-akuma-1920x1200-video-games-street-fighter-hd-art-wallpaper-preview.jpg">
+</head>
+<body>
+
+    <header>
+
+        <a href="../index.html"><img class="header_img" src="../assets/img/logo_violeta.png" alt="logo del gimnasio"></a>
+
+        <h1 class="header_title">AKUMA GYM</h1>
+
+
+        <nav>
+            
+            <ul class="nav_lista">
+
+                <li><a href="../index.html">INICIO</a></li>
+
+                <li><a href="tienda.html">TIENDA</a></li>
+
+                <li><a href="actividades.html">ACTIVIDADES</a></li>
+
+                <li><a href="contacto.html">CONTACTO</a></li>
+
+                <li><a href="socio.html">HACETE SOCIO</a></li>
+
+            </ul>
+            
+            <ul class="mobile_menu">
+                <li class="mobile_submenu">
+                    <div class="container_barrita"><img class="barra_menu" src="../assets/img/menu.png" alt="barra desplegable"></div>
+                    <ul class="nav_mobile">
+                
+                        <a href="../index.html">
+                            <li>INICIO</li>
+                        </a>
+            
+                        <a href="tienda.html">
+                            <li>TIENDA</li>
+                        </a>
+            
+                        <a href="actividades.html">
+                            <li>ACTIVIDADES</li>
+                        </a>
+            
+                        <a href="contacto.html">
+                            <li>CONTACTO</li>
+                        </a>
+            
+                        <a href="socio.html">
+                            <li>HACETE SOCIO</li>
+                        </a>
+            
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="shopping">
+        <div class="compras">
+            <span class="total"></span>
+            <img class="carrito" src="../assets/img/carro.png" alt="carrito" onclick="mostrarProductos()">
+            <div class="lista_compras">
+                <button class="boton_comprar_tienda">COMPRAR</button>
+                <p>TOTAL ||    $<span class="precio_total">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <p class="detalles destacado">Presiona el carrito para ver detalles de compra</p>
+    <h1 class="title title_tienda tracking-in-expand tiendaa">TIENDA</h1>
+    <main class="tienda_main">
+        <section class="tienda_section">
+            <div class="espaciado_tienda"></div>
+
+            <article class="article_ofertas">
+                <h1 class="title">DESTACADO</h1>
+                <ul class="article_muestra">
+                    <li>
+                        <img src="../assets/img/productos/musculosa_1.png" alt="musculosa 1">
+                        <p class="nombre_producto">Musculosa Akuma</p>
+                        <p>$750</p>
+                        <button class="agregar" onclick="addp('Musculosa Akuma',750)">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/pantalon.jpg" alt="pantalon">
+                        <p class="nombre_producto">Pantalon Akuma</p>
+                        <p>$1290</p>
+                        <button class="agregar" onclick="addp('Pantalon Akuma',1290)">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/mochila.jpg" alt="mochila">
+                        <p class="nombre_producto">Mochila Akuma</p>
+                        <p>$1500</p>
+                        <button class="agregar" onclick="addp('Mochila Akuma',1500)">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/whey1.jpg" alt="suplemento whey protein 1">
+                        <p class="nombre_producto">Whey Protein True Made</p>
+                        <p class="precio">$2590</p>
+                        <button class="agregar" onclick="addp('Whey Protein True Made',2590)">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/barra.jpg" alt="suplemento barra">
+                        <p class="nombre_producto">Barra Protéica Supino Protein</p>
+                        <p class="precio">$55</p>
+                        <button class="agregar" onclick="addp('Barra Protéica Supino Protein', 55)" >Agregar al carrito</button>
+                    </li>
+                </ul>
+            </article>
+
+
+            <article class="article_ropa">
+                <h1 class="title">ROPA Y ACCESORIOS</h1>
+                <ul class="article_muestra">
+                    <li>
+                        <img src="../assets/img/productos/musculosa_1.png" alt="musculosa 1">
+                        <p class="nombre_producto">Musculosa Akuma</p>
+                        <p>$750</p>
+                        <button class="agregar" onclick="addp('Musculosa Akuma',750);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/musculosa_2.png" alt="musculosa 2">
+                        <p class="nombre_producto">Musculosa Akuma alternativa</p>
+                        <p>$750</p>
+                        <button class="agregar" onclick="addp('Musculosa Akuma alternativa',750);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/pantalon.jpg" alt="pantalon">
+                        <p class="nombre_producto">Pantalon Akuma</p>
+                        <p>$1290</p>
+                        <button class="agregar" onclick="addp('Pantalon Akuma',1290);">Agregar al carrito</button>
+                    </li>   
+                    <li>
+                        <img src="../assets/img/productos/mochila.jpg" alt="mochila">
+                        <p class="nombre_producto">Mochila Akuma</p>
+                        <p>$1500</p>
+                        <button class="agregar" onclick="addp('Mochila Akuma',1500);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/botellas.jpg" alt="botellas">
+                        <p class="nombre_producto">Botella</p>
+                        <p>$800</p>
+                        <button class="agregar" onclick="addp('Botella',800);">Agregar al carrito</button>
+                    </li>
+                </ul>
+            </article>
+
+
+            <article class="article_suplementos">
+                <h1 class="title">SUPLEMENTOS</h1>
+
+                <ul class="article_muestra">
+                    <li>
+                        <img src="../assets/img/productos/whey1.jpg" alt="suplemento whey protein 1">
+                        <p class="nombre_producto">Whey Protein True Made</p>
+                        <p class="precio">$2590</p>
+                        <button class="agregar" onclick="addp('Whey Protein True Made',2590);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/whey2.jpg" alt="suplemento whey protein 2">
+                        <p class="nombre_producto">Whey Protein Isolate</p>
+                        <p class="precio">$5190</p>
+                        <button class="agregar" onclick="addp('Whey Protein Isolate',5190);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/whey3.jpg" alt="suplemento whey protein 3">
+                        <p class="nombre_producto">Whey Protein Gold Pro</p>
+                        <p class="precio">$4590</p>
+                        <button class="agregar" onclick="addp('Whey Protein Gold Pro',4590);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/creatina1.jpg" alt="suplemento creatina 1">
+                        <p class="nombre_producto">ProFit Creatine Monohydrate </p>
+                        <p class="precio">$1390</p>
+                        <button class="agregar" onclick="addp('ProFit Creatine Monohydrate',1390);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/creatina2.jpg" alt="suplemento creatina 2">
+                        <p class="nombre_producto">ON Creatine Powder</p>
+                        <p class="precio">$5290</p>
+                        <button class="agregar" onclick="addp('ON Creatine Powder',5290);">Agregar al carrito</button>
+                    </li>
+                    <li>
+                        <img src="../assets/img/productos/barra.jpg" alt="suplemento barra">
+                        <p class="nombre_producto">Barra Protéica Supino Protein</p>
+                        <p class="precio">$55</p>
+                        <button class="agregar" onclick="addp('Barra Protéica Supino Protein', 55);">Agregar al carrito</button>
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer_info">
+            <p>Av. Agraciada 1366 | akumagym@gmail.com | 23071477 | 097 888 362</p>
+        </div>
+
+        <div class="footer_redes">
+            <ul>
+                
+                <li><a href="tienda.html"><img class="logo_redes" src="../assets/img/whatsapp.png" alt="logo whatsapp"></a></li>
+
+                <li><a href="tienda.html"><img class="logo_redes" src="../assets/img/facebook.png" alt="logo facebook"></a></li>
+
+                <li><a href="tienda.html"><img class="logo_redes" src="../assets/img/instagram.png" alt="logo instagram"></a></li>
+
+                <li><a href="tienda.html"><img class="logo_redes" src="../assets/img/twitter.png" alt="logo twitter"></a></li>
+            
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="../js/tienda.js"></script>
+</body>
+</html>

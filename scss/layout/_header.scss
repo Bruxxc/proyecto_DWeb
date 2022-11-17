@@ -1,0 +1,91 @@
+/* COMIENZO HEADER */
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 6fr 14fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "h_logo h_title nav";
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border: black solid;
+    border-top: none;
+    background-color: #1d171c;
+    z-index: 6;
+}
+
+/*LOGO*/
+.header_img {
+    grid-area: h_logo;
+    height: 70px;
+    width: 70px;
+    &:hover{filter: brightness(170%);}
+}
+
+/*AKUMA GYM*/
+.header_title {
+    grid-area: h_title;
+    justify-self: start;
+    color: rgba(255, 255, 255, 0.87);
+
+}
+
+/*COMIENZO NAV*/
+nav {
+    grid-area: nav;
+    justify-self: end;
+    margin-right: 1%;
+}
+
+.nav_lista {
+    li{
+        display: inline;
+        margin: 5px;
+    }
+    a{ 
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.87);
+        &:hover{
+            color: rgb(140, 34, 167);
+        }
+    }
+
+}
+
+/*FIN NAV*/
+
+/*COMIENZO NAV MOBILE*/
+.nav_mobile {
+    grid-area: mobile;
+    list-style-type: none;
+    display: none;
+}
+
+/*BARRA*/
+.barra_menu {
+    width: 45px;
+    height: 45px;
+    display: none;
+    grid-area: barra;
+}
+
+.mobile_menu {
+    list-style-type: none;
+}
+
+/*DESPLEGABLE*/
+.nav_mobile li {
+    list-style: none;
+    background-color: #161015;
+    border-bottom: #5e1eb1 solid 0.6px;
+    text-shadow: 2px 2px 10px #5e1eb1;
+    text-align: center;
+    color: aliceblue;
+    height: 30px;
+}
+
+/*FIN NAV MOBILE*/
+
+/* FIN HEADER */
+

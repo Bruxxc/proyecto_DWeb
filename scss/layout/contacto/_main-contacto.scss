@@ -1,0 +1,126 @@
+/*COMIENZO MAIN CONTACTO*/
+
+.contacto_main {
+    margin-top: 100px;
+    
+}
+
+.contacto_article {
+    display: grid;
+    justify-items: center;
+    color: rgb(140, 34, 167);
+}
+
+/*SECTION*/
+.contacto_section {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "form logo contactos";
+}
+
+.contacto_section_imagen {
+    grid-area: logo;
+    display: grid;
+    align-items: center;
+    img{    
+        width: 200px;
+        height: 200px;}
+}
+
+/*TITULO*/
+.contacto_section_title {
+    margin-bottom: 5px;
+    font-size: x-large;
+    color: $title;
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+}
+
+.contacto_article {
+    grid-area: form;
+}
+
+
+/*FORMULARIO FIELDSET*/
+.contacto_article form {
+    margin-left: 10px;
+    margin-top: 15px;
+
+    fieldset{
+        background-color: #0c0b0c;
+        height: 410px;
+        width: 500px;
+        box-shadow: 3px 3px 15px $caja_neon_color;
+        border: solid black;
+        display: grid;
+    }
+}
+
+/*ELEMENTO DE FORMULARIO*/
+label{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8px;
+}
+.form_element {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 430px;
+
+}
+
+.enviar{
+    justify-self: center;
+    width: 98%;
+    margin-left: 0;
+}
+
+
+
+/*TEXTAREA SIZE*/
+textarea {
+    width: 450px;
+    height: 250px;
+}
+
+/*INFO*/
+.contacto_section_info {
+    grid-area: contactos;
+    color: rgb(202, 35, 194);
+    height: 480px;
+    text-align: center;
+    margin-right: 4%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+.section_contactos ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 28px;
+
+    li{
+        width: 450px;
+        background-color: #0c0b0c;
+        box-shadow: 3px 3px 11px $caja_neon_color;
+    }
+}
+
+/*CONTACTOS SUBTITULOS*/
+.contactos_subtitle {
+    @include tag(rgb(107, 13, 151),3px,black);
+    color: $subtitle;
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+}
+
+/*CONTACTOS ICONOS*/
+.contactos_icono {
+    width: 60px;
+    height: 60px;
+}
+
+/*FIN MAIN CONTACTO*/

@@ -1,0 +1,103 @@
+/* COMIENZO MAIN ACTIVIDADES */
+
+.actividades_main {
+    padding-top: 80px;
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+}
+
+/*VALORES*/
+.actividades_article_valores {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    background-image: url(../assets/img/akuma_fondo3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+
+    p{
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+
+/*TEXTO SECUNDARIO*/
+.article_acote {
+    font-size: small;
+    width: 100%;
+    text-align: center;
+}
+
+.article_lista_actividades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 20px;
+
+    li{
+        /*ACTIVIDADES CARTAS*/
+        display: grid;
+        width: 490px;
+        height: 600px;
+        margin: 1%;
+        background-color: #020202;
+        box-shadow: 3px 3px 15px $caja_neon_color;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "logo title title title title title title"
+            "img img img img img img img"
+            "txt txt txt txt txt txt txt";
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+/*TITULO*/
+.actividades_article_title {
+    font-size: xx-large;
+    text-align: center;
+    color: $title;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+
+/*ICONO ACTIVIDADES*/
+.article_icono {
+    height: 50px;
+    width: 50px;
+    grid-area: logo;
+    filter: drop-shadow(2px 2px 10px $caja_neon_color);
+}
+
+/*TITULO ACTIVIDADES*/
+.article_lista_actividades_title {
+    text-align: center;
+    color: $subtitle;
+    grid-area: title;
+    @include tag(#5c147e,5px,black);
+    box-shadow: $caja_neon_color 1px 1px 5px;
+}
+
+/*TEXTO ACTIVIDADES*/
+.article_lista_actividades_text {
+    height: 220px;
+    color: aliceblue;
+    line-height: 35px;
+    margin-left: 1%;
+    grid-area: txt;
+}
+
+/*IMG ACTIVIDADES*/
+.article_lista_actividades_img{
+    height: 300px;
+    width: 99%;
+    box-shadow: $caja_neon_color 5px 5px 10px;
+    grid-area: img;
+    border: solid black 3px;
+}
+
+
+/*FIN MAIN ACTIVIDADES*/

@@ -1,0 +1,84 @@
+@media (max-width:1200px) {
+
+    /*ACTIVIDADES*/
+    .article_lista_actividades li {
+        width: 445px;
+    }
+
+    /*TEXTO ACTIVIDADES*/
+    .article_lista_actividades_text {
+        font-size: 15px;
+    }
+
+    /*IMG ACTIVIDADES*/
+    .article_lista_actividades_img {
+        height: 290px;
+    }
+
+}
+
+/*PANTALLA MEDIANA 2*/
+
+@media (max-width:892px) {
+
+    /*ACTIVIDADES*/
+    .article_lista_actividades li {
+        width: 380px;
+    }
+
+
+    /*TEXTO ACTIVIDADES*/
+    .article_lista_actividades_text {
+        font-size: 13px;
+    }
+
+    /*IMG ACTIVIDADES*/
+    .article_lista_actividades_img {
+        height: 280px;
+    }
+}
+
+/*PANTALLA MEDIANA 3*/
+
+@media (max-width:800px) {}
+
+/*PANTALLA MEDIANA 4 (TABLET HORIZONTAL)*/
+
+@media (max-width:768px) {
+
+    .article_lista_actividades {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        li{
+        width: 95%;
+        }
+    }
+}
+
+/*MOBILE 1*/
+
+@media (max-width:450px) {
+
+
+    /*TEXTO ACTIVIDADES*/
+    .article_lista_actividades_text {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    /*IMG ACTIVIDADES*/
+    .article_lista_actividades_img{
+        height: 250px;
+    }
+
+    .actividades_article_valores{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:325px) {
+
+    .article_lista_actividades_img {
+        height: 220px;
+    }
+}

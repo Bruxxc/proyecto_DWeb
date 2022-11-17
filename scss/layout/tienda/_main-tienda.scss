@@ -1,0 +1,201 @@
+
+.shopping{
+    margin-top: 80px;
+    height: 50px;
+    width: fit-content;
+    display:grid;
+    align-items: center;
+    text-shadow: 0px 0px 10px $texto_neon_shadow;
+}
+.compras{
+    position: fixed;
+    width: 200px;
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "carrito lista"
+    "total lista";
+    justify-items: center;
+    z-index: 4;
+    img{
+        grid-area: carrito;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        &:hover{
+            filter: brightness(180%);
+        }
+    }
+}
+
+.clickea{
+    font-size: small;
+    color:$destacado;
+}
+
+.boton_comprar_tienda{
+    width: 100%;
+}
+
+.lista_compras{
+    grid-area:lista;
+    width: 200px;
+    height: fit-content;
+    border: #5e1eb1 solid 0.6px;
+    display: none;
+}
+
+.lista_compras{
+    text-align: center;
+    color:aliceblue;
+    background-color: #070407;
+    p{
+        border-bottom: #5e1eb1 solid 0.6px;
+        border-top: #5e1eb1 solid 0.6px;
+    }
+}
+
+.producto_en_lista{
+    font-size: 12px;
+}
+
+.precio_total{
+    color:$destacado;
+}
+
+.total{
+    width: 30px;
+    height: 30px;
+    border: solid $destacado;
+    border-radius: 50%;
+    grid-area:total;
+}
+
+.tiendaa{
+    justify-self:center;
+}
+
+.detalles{
+    font-size: x-small;
+    width: 100px;
+    height: 50px;
+    margin-left: 5%;
+    text-shadow: 0px 0px 10px $texto_neon_shadow;
+}
+
+/*COMIENZO MAIN*/
+.espaciado_tienda{
+    height: 50px;
+}
+.tienda_main {
+    background-image: url(../assets/img/akuma_fondo5.png);
+    background-position:top right;
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.tienda_section {
+    text-align: center;
+    background-image:url(../assets/img/tienda_back.png);
+    background-position: left top;
+    background-size:350px;
+    background-repeat: no-repeat;
+}
+.article_ofertas {
+    margin-top: 5%;
+}
+
+/*TITULOS*/
+.title {
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+    color:$subtitle;
+}
+
+/*TITULO TIENDA*/
+.title_tienda {
+    color: $title;
+    -webkit-text-stroke: 0.2px black;
+    font-size: xx-large;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background-image: url(../assets/img/dragons.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:90px;
+}
+
+/*LISTA DE ARTICULOS*/
+.article_muestra {
+    border: solid black;
+    box-shadow: 3px 3px 8px $caja_neon_color;
+    background-color: #0c0b0c;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 420px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+    column-gap: 18px;
+}
+
+/*ARTICULOS*/
+.article_muestra li {
+    display: grid;
+    border: solid rgb(89, 18, 155) 3px;
+    border-radius: 4%;
+    img{
+        border-radius:3%;
+        height: 290px;
+        width: 230px;
+    }
+    &:hover{
+        border: solid rgb(172, 21, 177) 3px;
+        box-shadow: 0 0 16px rgb(120, 6, 124);
+    }
+    &:hover p{
+        color:rgb(172, 21, 177);
+        text-shadow: 0 0 20px rgb(117, 6, 121);
+    }
+
+}
+
+.nombre_producto{
+    @include tag(#5c147e,3px,black);
+}
+/*FIN MAIN*/
+
+/*CON JS*/
+
+.agregar{
+    width: 150px;
+    height: 30px;
+    justify-self: center;
+}
+
+.contador_productos{
+    text-align: center;
+}
+
+.boton_quitar{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.boton_restar{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+.botones_del{
+    display: block;
+}

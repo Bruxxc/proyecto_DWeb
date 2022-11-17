@@ -1,0 +1,51 @@
+/* COMIENZO FOOTER */
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    border: black solid 2px;
+    border-bottom: none;
+    background-color: #1d171c;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    margin-top: auto;
+    box-shadow: 6px 1px 12px $caja_neon_color;
+}
+
+/*REDES*/
+.footer_redes {
+    justify-self: right;
+    margin-right: 2%;
+}
+
+/*INFO*/
+.footer_info {
+    justify-self: center;
+    font-size: 12px;
+    color: aliceblue;
+    text-shadow: 2px 2px 10px $texto_neon_shadow;
+    margin-left: auto;
+}
+
+.footer_redes {
+    ul{    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 10px;
+        list-style: none;
+    }
+
+}
+
+/*REDES SIZE*/
+.logo_redes {
+    width: 30px;
+    height: 30px;
+    &:hover{
+        filter: brightness(170%);
+    }
+}
+
+/* FIN FOOTER */
